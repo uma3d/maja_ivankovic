@@ -49,7 +49,7 @@ body {
 /* HERO SECTION */
 
 .section-hero {
-  background-image: url("/media/hero/hero.jpg");
+  background-image: url("media/hero/hero.jpg");
   background-size: cover;
   background-position: top;
   display: flex;
