@@ -87,6 +87,23 @@ body {
   z-index: 2;
 }
 
+.nav {
+  transition: visibility 0s, opacity 1s linear;
+  /*adjusttimingasnecessary*/
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: visibility 0s, opacity 1s linear;
+  -moz-transition: visibility 0s, opacity 1s linear;
+  -ms-transition: visibility 0s, opacity 1s linear;
+  -o-transition: visibility 0s, opacity 1s linear;
+}
+
+.nav.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear; /* delay the visibility to after the opacity transition */
+}
+
 .business-name {
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
@@ -1195,6 +1212,12 @@ h3::after {
 
   .footer .hero-cta-list {
     gap: 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .navigation-checkbox:checked ~ .nav {
+    display: none;
   }
 }
 

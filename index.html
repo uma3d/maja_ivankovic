@@ -513,6 +513,7 @@
         );
         const tel = document.querySelector(".tel");
         const email = document.querySelector(".e-mail");
+        const nav = document.querySelector('.nav');
 
         menuLinks.forEach((link) => {
           link.addEventListener("click", () => {
@@ -528,7 +529,13 @@
           // Uncheck the menu checkbox to close the menu
           menuCheckbox.checked = false;
         });
-
+        menuCheckbox.addEventListener('change', function () {
+          if (menuCheckbox.checked) {
+            nav.classList.add('hidden');
+          } else {
+            nav.classList.remove('hidden');
+          }
+        });
       });
     </script>
     <script
