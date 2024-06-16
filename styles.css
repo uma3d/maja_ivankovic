@@ -1186,6 +1186,18 @@ h3::after {
   .popup-content {
     width: 100%;
   }
+  .footer {
+    gap: 0;
+  }
+
+  .footer .hero-cta-list {
+    gap: 0;
+  }
+
+  .footer .cta-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 300px) {
