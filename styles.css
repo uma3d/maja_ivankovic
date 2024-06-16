@@ -1144,15 +1144,18 @@ h3::after {
 
 @media only screen and (max-width: 400px) {
   .nav {
-    height: 60px;
+    height: 160px;
   }
-
   .motto {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     word-wrap: break-word;
     margin-top: -0.3rem;
   }
-
+  .special-text {
+    display: block; /* Forces a new line */
+    width: 100%; /* Takes full width of its parent */
+    white-space: normal; /* Ensures text wraps and is not forced on one line */
+  }
   .cta-btn {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
@@ -1187,9 +1190,6 @@ h3::after {
 @media only screen and (max-width: 300px) {
   .business-name {
     font-size: 1rem;
-  }
-  .motto {
-    font-size: 0.6rem;
   }
   .navigation-button,
   .navigation-background {
