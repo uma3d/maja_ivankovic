@@ -1196,10 +1196,7 @@ h3::after {
     top: 1rem;
     right: 1rem;
   }
-  .navigation-nav {
-    align-items: flex-end;
-    padding-bottom: 5vh;
-  }
+
   .section-gallery {
     padding: 0;
   }
